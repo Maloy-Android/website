@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глава 1</title>
+    <style>
+        body {
+            background-color: #f4e1d4;
+            font-family: 'Georgia', serif;
+            color: #4b3c32;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            animation: fadeIn 2s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .book-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #4b3c32;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #4b3c32;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #a0522d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-container">
+        <h1>Глава 1</h1>
+        <p>Здесь будет текст первой главы вашего рассказа...</p>
+        <a class="back-link" href="index.html">Назад к оглавлению</a>
+    </div>
+
+</body>
+</html>

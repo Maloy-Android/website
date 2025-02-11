@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рассказ</title>
+    <style>
+        body {
+            background-color: #f4e1d4;
+            font-family: 'Georgia', serif;
+            color: #4b3c32;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            animation: fadeIn 2s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .book-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #4b3c32;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .chapter-link {
+            display: block;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.5em;
+            color: #4b3c32;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .chapter-link:hover {
+            color: #a0522d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-container">
+        <h1>Оглавление</h1>
+        <a class="chapter-link" href="chapter1.html">Глава 1</a>
+        <a class="chapter-link" href="chapter2.html">Глава 2</a>
+    </div>
+
+</body>
+</html>
