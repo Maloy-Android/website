@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        h1 {
+            text-align: center;
+        }
+        .authors {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .author {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+        }
+        .author img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        body.dark {
+            background-color: #1e1e1e;
+            color: #4b3c32;
+        }
+        .theme-toggle {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #4b3c32;
+            color: #f4e1d4;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Переключить тему</button>
+    <h1>Авторы</h1>
+    <div class="authors">
+        <div class="author">
+            <img src="image/avatar2.jpg" alt="Имя 1">
+            <h2>Maxim Sermavbrin</h2>
+            <h2>(Maloy-Android)</h2>
+        </div>
+        <div class="author">
+            <img src="image/avatar1.jpg" alt="Имя 2">
+            <h2>Daniil Ionichev</h2>
+            <h2>(@J3stic_MD)</h2>
+        </div>
+    </div>
+    <script>
+    function toggleTheme() {
+        document.body.classList.toggle('dark');
+    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+}
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark');
+    }
+    </script>
+</body>
+</html>
