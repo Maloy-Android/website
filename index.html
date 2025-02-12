@@ -26,6 +26,13 @@
             margin-bottom: 20px;
         }
 
+        .button-image {
+            width: 50;
+            height: auto;
+            border-radius: 16px;
+            background-color: #fff;
+        }
+
         .theme-toggle {
             cursor: pointer;
             padding: 10px;
@@ -68,8 +75,11 @@
 </head>
 <body>
 
-    <button class="theme-toggle" onclick="toggleTheme()">Переключить тему</button>
-    <a href="authors.html" class="button">Перейти к Авторам</a>
+    <a href="#" class="button" onclick="toggleTheme()">
+        <img src="image/dark_theme.png" class="button-image">
+        <a href="authors.html" class="button">
+            <img src="image/persons.png" class="button-image">
+    </a>
 
     <div class="book-container">
         <h1>Оглавление</h1>

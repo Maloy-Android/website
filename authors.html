@@ -15,6 +15,12 @@
         h1 {
             text-align: center;
         }
+        .button-image {
+            width: 50;
+            height: auto;
+            border-radius: 16px;
+            background-color: #fff;
+        }
         .authors {
             display: flex;
             flex-wrap: wrap;
@@ -50,7 +56,9 @@
     </style>
 </head>
 <body>
-    <button class="theme-toggle" onclick="toggleTheme()">Переключить тему</button>
+    <a href="#" class="button" onclick="toggleTheme()">
+        <img src="image/group.png" class="button-image">
+    </a>
     <h1>Авторы</h1>
     <div class="authors">
         <div class="author">
